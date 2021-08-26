@@ -1,0 +1,30 @@
+<h2>Busqueda</h2>
+<hr />
+<ul class="list-group">
+  <li
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item"
+  >
+    Por pais
+  </li>
+  <li routerLink="region" routerLinkActive="active" class="list-group-item">
+    Por region
+  </li>
+  <li routerLink="capital" routerLinkActive="active" class="list-group-item">
+    Por capital
+  </li>
+  <!-- <a href="/capital" -->
+  <!-- EL CODIGO ANTERIOR FUNCIONA PERO RECARGA LA PAGINA, Y AL HACERLOS CAUSA MUCHOS PROBLEMAS -->
+  <!-- EN SU LUGAR SE AGREGA UN ATRIBUTO QUE SE GRACIAS A RouterModule -->
+  <!-- DICHO MODULO ES routerLink, ESTO DEBE SER IGUAL A EL URL DE ALGUNA RUTA YA DEFINIDA -->
+  <!-- routerLink SIEMPRE VA SEGUIDO DEL ATRIBUTO routerLinkActive -->
+  <!-- ESTO DEBE SER IGUAL A LA CLASE QUE QUIERO AÑADIR SI ESTOY EN ESE URL -->
+  <!-- 
+        [routerLinkActiveOptions] SE BASA EN routerLink, SI LA URL EN EL ANVEGADOR ES LA MISMA QUE LA 
+        routerLink  
+        ESTO SE HACE PORQUE EL PATH DEL HOME ESTA VACIO, TAMBIEN SE HACE ESTO POR EL pathMatch EN LA 
+        DEFINICION DE LA RUTA
+      -->
+</ul>
